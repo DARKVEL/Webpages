@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estacionamiento A</title>
+    <title>Estado de Estacionamiento</title>
     <style>
         .casillero {
             width: 50px;
@@ -21,29 +21,35 @@
             background-color: #ff0000; /* Cambia esto al color que desees */
             color: white; /* Cambia el color del texto al mismo que el fondo para que sea legible */
         }
+
+        /* Estilo para limitar el número de filas */
+        .fila {
+            display: flex;
+        }
     </style>
 </head>
 <body>
     <h1>Estado de Estacionamiento</h1>
     
-    <!-- Casilleros para representar el estado de los estacionamientos -->
-    <div class="casillero" id="estacionamiento1">1</div>
-    <div class="casillero" id="estacionamiento2">2</div>
-    <div class="casillero" id="estacionamiento3">3</div>
-    <div class="casillero" id="estacionamiento3">4</div>
-    <div class="casillero" id="estacionamiento3">5</div>
-    <div class="casillero" id="estacionamiento3">6</div>
-    <div class="casillero" id="estacionamiento3">7</div>
-    <div class="casillero" id="estacionamiento3">8</div>
-    <div class="casillero" id="estacionamiento3">9</div>
-    <div class="casillero" id="estacionamiento3">10</div>
-    <div class="casillero" id="estacionamiento3">11</div>
-    <div class="casillero" id="estacionamiento3">12</div>
-    <div class="casillero" id="estacionamiento3">13</div>
-    <div class="casillero" id="estacionamiento3">14</div>
-    <div class="casillero" id="estacionamiento3">15</div>
-    <div class="casillero" id="estacionamiento3">16</div>
-    <!-- Añade más casilleros según sea necesario -->
+    <!-- Filas de casilleros para representar el estado de los estacionamientos -->
+    <div class="fila">
+        <div class="casillero" id="estacionamiento1">1</div>
+        <div class="casillero" id="estacionamiento2">2</div>
+        <div class="casillero" id="estacionamiento3">3</div>
+        <div class="casillero" id="estacionamiento3">4</div>
+        <div class="casillero" id="estacionamiento3">5</div>
+        <div class="casillero" id="estacionamiento3">6</div>
+        <div class="casillero" id="estacionamiento3">7</div>
+        <div class="casillero" id="estacionamiento3">8</div>
+        <div class="casillero" id="estacionamiento3">9</div>
+        <div class="casillero" id="estacionamiento3">10</div>
+        <div class="casillero" id="estacionamiento3">11</div>
+        <div class="casillero" id="estacionamiento3">12</div>
+        
+        <!-- Añade más casilleros según sea necesario -->
+    </div>
+
+    <!-- Añade más filas según sea necesario -->
 
     <script>
         function actualizarEstado(estacionamiento, estado) {
@@ -67,3 +73,4 @@
     </script>
 </body>
 </html>
+
