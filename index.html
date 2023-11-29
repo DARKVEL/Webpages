@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamiento</title>
+</head>
+<body>
+    <h1>Estado de Estacionamiento</h1>
+    <form id="estacionamientoForm">
+        <label for="numeroEstacionamiento">Número de Estacionamiento:</label>
+        <input type="number" id="numeroEstacionamiento" name="numeroEstacionamiento" required>
+        <button type="button" onclick="enviarDatos()">Enviar</button>
+    </form>
+
+    <script>
+        function enviarDatos() {
+            var numeroEstacionamiento = document.getElementById('numeroEstacionamiento').value;
+            
+            // Puedes agregar aquí el código JavaScript para enviar datos al servidor si es necesario
+
+            alert("Datos enviados para el estacionamiento número " + numeroEstacionamiento);
+        }
+    </script>
+</body>
+</html>
